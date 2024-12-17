@@ -504,17 +504,12 @@ li {
     height: fit-content;
 }
 
-.download-card {
-    display: flex;
-    background-color: white;
-    color: black;
-    align-items: center;
-    gap: .8em;
-    border-radius: 4.6em;
+.download-card img{
+    transition: transform .4s ease-in-out;
 }
 
-.download-card:hover {
-    background-color: color-mix(in srgb, white, black 10%);
+.download-card:hover img{
+    transform: scale(106%);
 }
 
 .download-card i {
