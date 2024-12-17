@@ -15,8 +15,8 @@ body {
 }
 
 .maxWidth {
-    width: 90rem;
     max-width: 90%;
+    width: 90rem;
     margin: auto;
 }
 
@@ -45,21 +45,15 @@ li {
 }
 
 .login-register a {
-    border: 1px solid white;
-    padding: 0.5em 1.25em;
-    border-radius: 3em;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1px;
+    display: none;
 }
-
 
 .hero-banner {
     background-image: url(../img/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 100vh;
+    height: 100%;
 }
 
 .hero-banner .maxWidth {
@@ -70,25 +64,13 @@ li {
 
 .hero-title {
     color: white;
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
     margin: auto;
-    max-width: 80%;
 }
 
 .find-vehicle {
-    background-color: var(--bg-transparent);
-    position: absolute;
-    bottom: 0;
-    transform: translateY(50%);
-    padding: 1.87em 1.5em;
-    right: 0;
-    left: 0;
-    display: flex;
-    gap: 1em;
-    align-items: flex-end;
-    border-radius: 1em;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    display: none;
 }
 
 .check-input {
@@ -110,6 +92,7 @@ li {
     outline: 1px solid rgba(0, 0, 0, 0.07);
     border-radius: 0.5em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 1em;
 }
 
 .check-input:nth-child(odd) input {
@@ -147,7 +130,7 @@ li {
 }
 
 .main {
-    margin-top: 10em;
+    margin-top: 4em;
 }
 
 .brands {
@@ -158,6 +141,7 @@ li {
 .model-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 2em;
     gap: 1em;
 }
@@ -168,12 +152,6 @@ li {
     gap: 1em;
 }
 
-.brands .row,
-.model .row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.25em;
-}
 
 .brands-card,
 .model-card {
@@ -204,7 +182,7 @@ li {
 }
 
 .collection {
-    padding: 4em;
+    padding: 4em 0;
     background-color: #F5F5F5;
 }
 
@@ -223,6 +201,7 @@ li {
     display: flex;
     justify-content: center;
     gap: 1em;
+    flex-wrap: wrap;
     margin-bottom: 4em;
 }
 
@@ -239,13 +218,6 @@ li {
     color: white;
 }
 
-.collection .maxWidth .row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-flow: dense;
-    /* gap: 1em; */
-    gap: 1.4em;
-}
 
 .collection-card {
     display: flex;
@@ -333,13 +305,15 @@ li {
 }
 
 
-.how-title, .services-title {
+.how-title,
+.services-title {
     margin-top: 2.4em;
     font-size: 3em;
     text-align: center;
 }
 
-.how-desc, .services .maxWidth p {
+.how-desc,
+.services .maxWidth p {
     margin: 2em auto 6em;
     text-align: center;
     max-width: 45em;
@@ -353,7 +327,6 @@ li {
 }
 
 .how-card {
-    max-width: 37.5em;
     padding: 2em;
     outline: 2px solid rgba(0, 0, 0, 0.02);
     border-radius: 1.5em;
@@ -368,18 +341,10 @@ li {
 }
 
 .how-content {
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin-bottom: 9.25em;
-}
-
-.how-banner {
-    position: absolute;
-    background-color: #F5F5F5;
-    z-index: -1;
-    border-radius: 1.5em;
-    right: 0;
-    padding: 8em 2.75em 8em 10em;
-    transform: translateY(-95%) scale(100%);
 }
 
 .services {
@@ -391,17 +356,12 @@ li {
     padding: 2em 0;
 }
 
-.services .maxWidth .row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2em;
-}
 
 .services-card {
     text-align: center;
 }
 
-.services-card div{
+.services-card div {
     justify-content: center;
     display: flex;
     width: 48px;
@@ -419,13 +379,14 @@ li {
 
 .customers-title {
     font-size: 2.5em;
-    margin-top: 3em;
+   
 }
 
 .customers-top {
     display: flex;
+    margin-top: 3em;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 4em;
 }
 
@@ -434,7 +395,7 @@ li {
     gap: .5em;
 }
 
-.customers-arrow-right a{
+.customers-arrow-right a {
     width: 48px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -444,7 +405,7 @@ li {
     align-items: center;
 }
 
-.customers-arrow-left a{
+.customers-arrow-left a {
     width: 48px;
     aspect-ratio: 1;
     outline: 1px solid #A4A4A4;
@@ -456,7 +417,7 @@ li {
     transform: rotate(-180deg);
 }
 
-.customers-arrow-right i{
+.customers-arrow-right i {
     color: white;
 }
 
@@ -484,14 +445,7 @@ li {
     background-color: #0F0F0F;
     color: white;
     padding: 4em 0 2em;
-}
-
-.footer .maxWidth .row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2em;
-    justify-items: center;
-    align-items: center;
+    text-align: center;
 }
 
 .download-title {
@@ -499,16 +453,17 @@ li {
 }
 
 .download-store {
+    margin: auto;
     display: flex;
     gap: 2em;
     height: fit-content;
 }
 
-.download-card img{
+.download-card img {
     transition: transform .4s ease-in-out;
 }
 
-.download-card:hover img{
+.download-card:hover img {
     transform: scale(106%);
 }
 
@@ -521,14 +476,16 @@ li {
 }
 
 .download-desc {
-    margin: .4em 0;
+    margin: 1.4em 0;
 }
 
 .bottom {
     display: flex;
-    margin-top: 5.5em;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 1em;
+    margin-top: 5.5em;
 }
 
 .footer-nav ul {
@@ -541,22 +498,116 @@ li {
     gap: 1em;
 }
 
-.lg-2-7 {
-    grid-column: 2 / 8;
-}
-
-.lg-8-12 {
-    grid-column: 8 / 12;
-}
-
 .strong {
     font-weight: bolder;
     color: #646363;
 }
-.lg-2 {
-    grid-column: span 2;
+
+.sm-6 {
+    grid-column: span 7;
 }
 
-.lg-4 {
-    grid-column: span 4;
+.sm-12 {
+    grid-column: span 13;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+
+@media screen and (min-width: 960px) {
+
+    .bottom {
+        flex-direction: row;
+    }
+
+    .hero-title {
+        font-size: 4em;
+    }
+
+    .login-register a {
+        border: 1px solid white;
+        display: block;
+        padding: 0.5em 1.25em;
+        border-radius: 3em;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    .md-6 {
+        grid-column: span 6 ;
+    }
+    
+    .md-3 {
+        grid-column: span 4;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    .hero-title {
+        font-size: 4em;
+    }
+
+    .main {
+        margin-top: 10em;
+    }
+
+    .find-vehicle {
+        background-color: var(--bg-transparent);
+        position: absolute;
+        bottom: 0;
+        padding: 1.87em 1.5em;
+        transform: translateY(50%);
+        right: 0;
+        left: 0;
+        gap: 1em;
+        align-items: flex-end;
+        border-radius: 1em;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .footer {
+        text-align: left;
+    }
+
+    .how-card {
+        max-width: 37.5em;
+    }
+
+    .how-banner {
+        position: absolute;
+        background-color: #F5F5F5;
+        z-index: -1;
+        border-radius: 1.5em;
+        right: 0;
+        bottom: 0;
+        padding: 8em 2.75em 8em 10em;
+        transform: translateY(5%) scale(100%);
+    }
+
+    .find-vehicle {
+        display: flex;
+    }
+
+    .lg-2-7 {
+        grid-column: 2 / 8;
+    }
+
+    .lg-8-12 {
+        grid-column: 8 / 12;
+    }
+
+
+    .lg-2 {
+        grid-column: span 2;
+    }
+
+    .lg-4 {
+        grid-column: span 4;
+    }
 }
