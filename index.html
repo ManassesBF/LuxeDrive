@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeDrive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="maxWidth">
+            <div class="header-logo">
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+            </div>
+
+            <section class="login-register">
+                <a href="#">Login/Register</a>
+            </section>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <div class="maxWidth">
+            <h1 class="hero-title">Discover the world on wheels with our car rental service</h1>
+            <form class="find-vehicle">
+                <div class="check-input">
+                    <label for="location">Pick-up Location</label>
+                    <input type="text" id="location" placeholder="Search a location" required>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="check-input">
+                    <label for="date">Pick-up date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="check-input">
+                    <label for="location">Drop-off Location</label>
+                    <input type="text" id="location" placeholder="Search a location" required>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="check-input">
+                    <label for="date2">Drop-off date</label>
+                    <input type="date" id="date2" required>
+                </div>
+                <div class="check-btn">
+                    <input type="submit" value="Find a Vehicle" class="btn-find">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="brands maxWidth">
+            <div class="brands-content">
+                <h2 class="brands-title">Rent by Brands</h2>
+                <a href="#">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <section class="brands-cards row">
+                <article class="brands-card lg-2">
+                    <img src="img/brands/toyota.svg" alt="Toyota">
+                    <h3>Toyota</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/ford.svg" alt="Toyota">
+                    <h3>Ford</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/tesla.svg" alt="Toyota">
+                    <h3>Tesla</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/volkswagen.svg" alt="Toyota">
+                    <h3>Volkswagen</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/honda.svg" alt="Toyota">
+                    <h3>Honda</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/nissan.svg" alt="Toyota">
+                    <h3>Nissan</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/chevrolet.svg" alt="Toyota" style="filter: grayscale(100%)">
+                    <h3>Chevrolet</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/bmw.svg" alt="Toyota">
+                    <h3>BMW</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/mercedes.svg" alt="Toyota">
+                    <h3>Mercedez</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/hyundai.svg" alt="Toyota">
+                    <h3>Hyundai</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/audi.svg" alt="Toyota">
+                    <h3>Audi</h3>
+                </article>
+                <article class="brands-card lg-2">
+                    <img src="img/brands/kia.svg" alt="Toyota">
+                    <h3>Kia</h3>
+                </article>
+            </section>
+        </section>
+
+        <section class="model maxWidth">
+            <div class="model-content">
+                <h2 class="model-title">Rent by body type</h2>
+                <a href="#">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <section class="model-cards row">
+                <article class="model-card lg-2">
+                    <img src="img/model/suv1.svg" alt="Toyota">
+                    <h3>Toyota</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/crossover.svg" alt="Toyota">
+                    <h3>Ford</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/wagon.svg" alt="Toyota">
+                    <h3>Tesla</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/mpv.svg" alt="Toyota">
+                    <h3>Volkswagen</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/sport-coupe.svg" alt="Toyota">
+                    <h3>Honda</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/compact.svg" alt="Toyota">
+                    <h3>Nissan</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/coup.svg" alt="Toyota">
+                    <h3>Chevrolet</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/bmw.svg" alt="Toyota">
+                    <h3>BMW</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/sedan.svg" alt="Toyota">
+                    <h3>Mercedez</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/limousine.svg" alt="Toyota">
+                    <h3>Hyundai</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/convertible.svg" alt="Toyota">
+                    <h3>Audi</h3>
+                </article>
+                <article class="model-card lg-2">
+                    <img src="img/model/crossover.svg" alt="Toyota">
+                    <h3>Kia</h3>
+                </article>
+            </section>
+        </section>
+
+        <section class="collection">
+            <div class="maxWidth">
+                <h2 class="collection-title">Our Impressive Collection of Cars</h2>
+                <p class="collection-desc">Ranging from elegant sedans to powerful sports cars, all carefully selected
+                    to provide our customers with the ultimate driving experience.</p>
+                <nav class="collection-nav">
+                    <ul>
+                        <li><a href="#" class="active">Popular Car</a></li>
+                        <li><a href="#">Luxury Car</a></li>
+                        <li><a href="#">Vintage Car</a></li>
+                        <li><a href="#">Family Car</a></li>
+                        <li><a href="#">Off-Road Ca</a></li>
+                    </ul>
+                </nav>
+
+                <section class="collection-cards row">
+                    <article class="collection-card lg-4">
+                        <img src="img/audia8.png" alt="Audi A8" class="collection-card-img">
+                        <div class="collection-content">
+                            <h3>Audi A8 L 2022</h3>
+                            <p class="price">78.90 <span class="day">/day</span></p>
+                            <div class="collection-info">
+                                <div>
+                                    <img src="img/speed.svg">
+                                    <p>4,000</p>
+                                </div>
+                                <div>
+                                    <img src="img/gearbox.svg">
+                                    <p>Auto</p>
+                                </div>
+                                <div>
+                                    <img src="img/person.svg">
+                                    <p>4 Person</p>
+                                </div>
+                                <div>
+                                    <img src="img/gas-station.svg">
+                                    <p>Eletric</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="collection-btn">Rent now</a>
+                    </article>
+                    <article class="collection-card lg-4">
+                        <img src="img/suv-ford.jpg" alt="Audi A8" class="collection-card-img">
+                        <div class="collection-content">
+                            <h3>Nissan Maxima Platinum 2022</h3>
+                            <p class="price">78.90 <span class="day">/day</span></p>
+                            <div class="collection-info">
+                                <div>
+                                    <img src="img/speed.svg">
+                                    <p>4,000</p>
+                                </div>
+                                <div>
+                                    <img src="img/gearbox.svg">
+                                    <p>Auto</p>
+                                </div>
+                                <div>
+                                    <img src="img/person.svg">
+                                    <p>4 Person</p>
+                                </div>
+                                <div>
+                                    <img src="img/gas-station.svg">
+                                    <p>Eletric</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="collection-btn">Rent now</a>
+                    </article>
+                    <article class="collection-card lg-4">
+                        <img src="img/porshe-cayane.jpg" alt="Audi A8" class="collection-card-img">
+                        <div class="collection-content">
+                            <h3>Porsche Cayenne GTS 2022</h3>
+                            <p class="price">78.90 <span class="day">/day</span></p>
+                            <div class="collection-info">
+                                <div>
+                                    <img src="img/speed.svg">
+                                    <p>4,000</p>
+                                </div>
+                                <div>
+                                    <img src="img/gearbox.svg">
+                                    <p>Auto</p>
+                                </div>
+                                <div>
+                                    <img src="img/person.svg">
+                                    <p>4 Person</p>
+                                </div>
+                                <div>
+                                    <img src="img/gas-station.svg">
+                                    <p>Eletric</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="collection-btn">Rent now</a>
+                    </article>
+                    <article class="collection-card lg-4">
+                        <img src="img/bmw-m8.jpg" alt="Audi A8" class="collection-card-img">
+                        <div class="collection-content">
+                            <h3>BMW M8 Coupe 2022</h3>
+                            <p class="price">78.90 <span class="day">/day</span></p>
+                            <div class="collection-info">
+                                <div>
+                                    <img src="img/speed.svg">
+                                    <p>4,000</p>
+                                </div>
+                                <div>
+                                    <img src="img/gearbox.svg">
+                                    <p>Auto</p>
+                                </div>
+                                <div>
+                                    <img src="img/person.svg">
+                                    <p>4 Person</p>
+                                </div>
+                                <div>
+                                    <img src="img/gas-station.svg">
+                                    <p>Eletric</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="collection-btn">Rent now</a>
+                    </article>
+                    <article class="collection-card lg-4">
+                        <img src="img/bmw-x7.jpg" alt="Audi A8" class="collection-card-img">
+                        <div class="collection-content">
+                            <h3>BMW X7 M50i 2022</h3>
+                            <p class="price">78.90 <span class="day">/day</span></p>
+                            <div class="collection-info">
+                                <div>
+                                    <img src="img/speed.svg">
+                                    <p>4,000</p>
+                                </div>
+                                <div>
+                                    <img src="img/gearbox.svg">
+                                    <p>Auto</p>
+                                </div>
+                                <div>
+                                    <img src="img/person.svg">
+                                    <p>4 Person</p>
+                                </div>
+                                <div>
+                                    <img src="img/gas-station.svg">
+                                    <p>Eletric</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="collection-btn">Rent now</a>
+                    </article>
+                    <article class="collection-card lg-4">
+                        <img src="img/porshe2.jpg" alt="Audi A8" class="collection-card-img">
+                        <div class="collection-content">
+                            <h3>Porsche Cayenne GTS 2022</h3>
+                            <p class="price">78.90 <span class="day">/day</span></p>
+                            <div class="collection-info">
+                                <div>
+                                    <img src="img/speed.svg">
+                                    <p>4,000</p>
+                                </div>
+                                <div>
+                                    <img src="img/gearbox.svg">
+                                    <p>Auto</p>
+                                </div>
+                                <div>
+                                    <img src="img/person.svg">
+                                    <p>4 Person</p>
+                                </div>
+                                <div>
+                                    <img src="img/gas-station.svg">
+                                    <p>Eletric</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="collection-btn">Rent now</a>
+                    </article>
+            </div>
+            <a href="#" class="btn-see">See all Cars <i class="fa-solid fa-arrow-right"></i></a>
+        </section>
+
+        </section>
+
+        <section class="how">
+            <div class="maxWidth">
+                <h2 class="how-title">How it woks</h2>
+                <p class="how-desc">Renting a luxury car has never been easier. Our streamlined process makes it simple
+                    for you to book and confirm your vehicle of choice online</p>
+
+                <div class="how-content row">
+                    <section class="how-cards lg-6">
+                        <article class="how-card">
+                            <div class="how-card-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i></i>
+                            </div>
+
+                            <div>
+                                <h3>Browse and select</h3>
+                                <p>Choose from our wide range of premium cars, select the pickup and return dates and
+                                    locations that suit you best.</p>
+                            </div>
+                        </article>
+
+                        <article class="how-card">
+                            <div class="how-card-icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+
+                            <div>
+                                <h3>Book and confirm</h3>
+                                <p>Book your desired car with just a few clicks and receive an instant confirmation via
+                                    email or SMS.</p>
+                            </div>
+                        </article>
+
+                        <article class="how-card">
+                            <div class="how-card-icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+
+                            <div>
+                                <h3>Enjoy your ride</h3>
+                                <p>Pick up your car at the designated location and enjoy your premium driving experience
+                                    with our top-quality service.</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <img src="img/car-how.png" class="how-banner">
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="maxWidth">
+                <h2 class="services-title">Our Services & Benefits</h2>
+                <p>To make renting easy and hassle-free, we provide a variety of services and advantages. We have you
+                    covered with a variety of vehicles and flexible rental terms.</p>
+                <section class="services-cards row">
+                    <article class="services-card lg-4">
+                        <div><i class="fa-solid fa-moon"></i></div>
+                        <h3 class="services-card-title">Quality Choice</h3>
+                        <p class="services-card-desc">We offer a wide range of high-quality vehicles to choose from,
+                            including luxury cars, SUVs, vans, and more.</p>
+                    </article>
+                    <article class="services-card lg-4">
+                        <div><i class="fa-solid fa-globe"></i></div>
+                        <h3 class="services-card-title">Affordable Prices</h3>
+                        <p class="services-card-desc">Our rental rates are highly competitive and affordable, allowing
+                            our customers to enjoy their trips without breaking the bank.</p>
+                    </article>
+                    <article class="services-card lg-4">
+                        <div><i class="fa-solid fa-certificate"></i></div>
+                        <h3 class="services-card-title">Convenient Online Booking</h3>
+                        <p class="services-card-desc">With our easy-to-use online booking system, customers can quickly
+                            and conveniently reserve their rental car from anywhere, anytime.</p>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="customers">
+            <div class="maxWidth">
+                <div class="customers-top">
+                    <h2 class="customers-title">What Our Customers Say</h2>
+                    <div class="arrows">
+                        <div class="customers-arrow-left">
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="customers-arrow-right">
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoyment">
+                    “I was really impressed with the level of service I received from this car rental company. The
+                    process was smooth and easy, and the car I rented was in excellent condition. The staff was friendly
+                    and helpful, and I felt well taken care of throughout my rental period. I would definitely recommend
+                    this company to anyone looking for a premium car rental experience.”
+                </div>
+                <div class="user">
+                    <img src="img/customers.png" alt="">
+                    <div class="user-content">
+                        <h3 class="user-title">Lokman Hossain</h3>
+                        <p class="user-from">From <span class="strong">Texas</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="maxWidth">
+            <section class="download row">
+                <div class="download-content lg-2-7">
+                    <h2 class="download-title">Download our mobile app</h2>
+                    <p class="download-desc">Get exclusive access to car rentals with our mobile app. Download now and
+                        experience convenience on the go.</p>
+                </div>
+                <div class="download-store lg-8-12">
+                    <a href="#" class="download-card">
+                        <img src="img/appstore.png" alt="">
+                    </a href="#">
+                    <a href="#" class="download-card">
+                        <img src="img/googleplay.png" alt="">
+                    </a href="#">
+                </div>
+            </section>
+
+            <section class="bottom">
+                <img src="img/logo.svg" alt="Luxedrive">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#rent">Rent</a></li>
+                        <li><a href="#share">Share</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
